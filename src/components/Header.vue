@@ -83,15 +83,10 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="active" href="index-2.html">Home</a>
-                                        <ul class="sub-menu">
-                                            <li><a class="active" href="index-2.html">Home 01</a></li>
-                                            <li><a href="index-3.html">Home 02</a></li>
-                                            <li><a href="index-4.html">Home 03</a></li>
-                                        </ul>
+                                        <router-link class="active" to="/">Home</router-link>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="about.html">About us</a>
+                                        <router-link to="/about">About</router-link>
                                     </li>
                                     <li class="nav-item">
                                         <a href="courses.html">Courses</a>
