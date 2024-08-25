@@ -1,17 +1,4 @@
 <template>
-  <div class="search-box">
-    <div class="serach-form">
-        <div class="closebtn">
-            <span></span>
-            <span></span>
-        </div>
-        <form action="#">
-            <input type="text" placeholder="Search by keyword">
-            <button><i class="fa fa-search"></i></button>
-        </form>
-    </div> <!-- serach form -->
-</div>
-
 
 <section id="page-banner" class="pt-105 pb-110 bg_cover" data-overlay="8" style="background-image: url(assets/images/page-banner-1.jpg)">
     <div class="container">
