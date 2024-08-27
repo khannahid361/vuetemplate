@@ -207,55 +207,6 @@ $(function() {
     });
     
     
-    //===== Slick testimonial Slied
-    
-    $('.patnar-slied').slick({
-        dots: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        speed: 800,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-        ]
-    });
-    
-    
-    //===== Back to top
-    
     // Show or hide the sticky footer button
     $(window).on('scroll', function(event) {
         if($(this).scrollTop() > 600){
