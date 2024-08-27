@@ -63,147 +63,14 @@ $(function() {
             return false
         });
         
-    }
+    }    
     
-    
-  
-    
-    
-    //===== Slick Category Slied
-    
-    $('.category-slied').slick({
-        dots: false,
-        infinite: false,
-        speed: 800,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
-        prevArrow:'<span class="prev"><i class="fa fa-angle-left"></i></span>',
-        nextArrow: '<span class="next"><i class="fa fa-angle-right"></i></span>',
-        responsive: [
-        {
-          breakpoint: 922,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-        ]
-    });
-    
-    
-    //===== Slick Course Slied
-    
-    $('.course-slied').slick({
-        dots: false,
-        infinite: true,
-        speed: 800,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: true,
-        prevArrow:'<span class="prev"><i class="fa fa-angle-left"></i></span>',
-        nextArrow: '<span class="next"><i class="fa fa-angle-right"></i></span>',
-        responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-          }
-        },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-        ]
-    });
-    
-    
+
     //====== Magnific Popup
     
     $('.Video-popup').magnificPopup({
         type: 'iframe'
         // other options
-    });
-    
-    
-    //===== Slick testimonial Slied
-    
-    $('.testimonial-slied').slick({
-        dots: true,
-        infinite: true,
-        speed: 800,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-        ]
     });
     
     

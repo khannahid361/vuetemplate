@@ -1175,6 +1175,7 @@ p {
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
+    width: 20rem;
 }
 .singel-course > .thum{
     position: relative;
