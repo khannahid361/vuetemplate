@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import PostView from '@/views/PostView.vue'
+import NotFound from '@/components/NotFound.vue'
 
 
 const routes = [
@@ -22,6 +23,11 @@ const routes = [
     name: 'post',
     component: PostView,
     meta: { keepAlive: true }
+  },
+  {
+    path : '/:catchAll(.*)',
+    name : 'NotFound',
+    component : () => NotFound
   }
 ]
 
