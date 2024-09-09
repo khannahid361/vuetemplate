@@ -42,7 +42,7 @@
           class="col-lg-3 col-sm-6"
         >
           <div class="singel-teachers mt-30 text-center">
-            <router-link :to="{ name: 'JobDetails', params: { id: job.id } }">
+            <router-link :to="{ name: 'postDetails', params: { id: post.id } }">
               <div class="image">
                 <img src="assets/images/teachers/t-1.jpg" alt="Teachers" />
               </div>
