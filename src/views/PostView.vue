@@ -75,7 +75,7 @@ export default {
 
     onMounted(() => {
       axios
-        .get("http://vueapiadmin.test/api/post/list")
+        .get("https://apiadmin.prbglobalbd.com//api/post/list")
         .then((response) => {
           console.log(response.data);
           posts.value = response.data; // Ensure this is an array
