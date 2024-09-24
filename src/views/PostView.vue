@@ -32,6 +32,14 @@
           <div class="section-title mt-50 pb-35">
             <h5>Featured Posts</h5>
             <h2>Feel The Posts</h2>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              Open modal
+            </button>
           </div>
         </div>
       </div>
@@ -56,6 +64,7 @@
       </div>
     </div>
   </section>
+  <AddModal />
   <Footer />
 </template>
 
@@ -64,16 +73,22 @@ import Footer from "@/components/Footer.vue";
 import Header from "@/components/Header.vue";
 import { onMounted, ref } from "vue";
 import axios from "axios";
+import AddModal from "@/components/postFolder/AddModal.vue";
 
 export default {
   components: {
     Header,
     Footer,
+    AddModal,
   },
   setup() {
     const posts = ref([]);
-
-    onMounted(() => {
+    const formValues = ref({
+      title: "",
+      author_name: "",
+      description: "",
+    });
+    function loadPost() {
       axios
         .get("https://apiadmin.prbglobalbd.com/api/post/list")
         .then((response) => {
@@ -83,6 +98,9 @@ export default {
         .catch((error) => {
           console.log(error);
         });
+    }
+    onMounted(() => {
+      loadPost();
     });
 
     return {
