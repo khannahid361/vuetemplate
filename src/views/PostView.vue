@@ -62,9 +62,10 @@
           </div>
         </div>
       </div>
+      <p v-if="responseMessage">{{ responseMessage }}</p>
     </div>
   </section>
-  <AddModal />
+  <AddModal @postAdded="loadPost" />
   <Footer />
 </template>
 
@@ -83,11 +84,7 @@ export default {
   },
   setup() {
     const posts = ref([]);
-    const formValues = ref({
-      title: "",
-      author_name: "",
-      description: "",
-    });
+    const responseMessage = ref("");
     function loadPost() {
       axios
         .get("https://apiadmin.prbglobalbd.com/api/post/list")
@@ -105,6 +102,8 @@ export default {
 
     return {
       posts,
+      responseMessage,
+      loadPost
     };
   },
 };
